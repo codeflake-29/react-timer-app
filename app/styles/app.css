@@ -1,0 +1,13 @@
+.top-bar{
+    background-color:black;
+}
+.top-bar ul{
+    background-color:black;
+}
+.top-bar .menu-text{
+    color: white;
+}
+.menu > .menu-text > a{
+    display: inline;
+    padding: 0;
+}
