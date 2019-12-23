@@ -2,6 +2,8 @@ const React=require('react')
 const ReactDOM=require('react-dom')
 const {Router, Route, IndexRoute, hashHistory}= require('react-router')
 const main=require('main')
+const Timer=require('timer')
+const Countdown=require('countdown')
 
 
 
@@ -18,6 +20,8 @@ ReactDOM.render(
     <Router history={hashHistory}>
         
     <Route path='/' component={main} >
+        <Route path='countdown' component={Countdown}/>
+        <IndexRoute component={Timer}/>
    
     </Route>
     </Router>,

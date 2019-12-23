@@ -25,7 +25,10 @@ module.exports={
         alias:{
            main:'app/components/main.jsx',
            applicationStyles:'app/styles/app.css',
-           nav:'app/components/nav.jsx'
+           nav:'app/components/nav.jsx',
+           timer:'app/components/timer.jsx',
+           countdown:'app/components/countdown.jsx',
+           clock:'app/components/clock.jsx'
         },
         extensions:['','.js','.jsx']
     },
