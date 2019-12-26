@@ -1,7 +1,7 @@
 const express=require('express')
 const app=express()
 
-const PORT=process.env.PORT || 3002
+const PORT=process.env.PORT || 3003
 app.use(function(req,res,next){
     if(req.headers['x-forwarded-proto']==='https'){
         res.redirect('http://'+req.hostname+req.url)

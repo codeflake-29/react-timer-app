@@ -1,6 +1,6 @@
 const React=require('react')
 
-const Controls=React.createClass({
+const Controls2=React.createClass({
     propTypes:{
         countdownStatus:React.PropTypes.string.isRequired,
         onStatusChange:React.PropTypes.func.isRequired
@@ -21,9 +21,10 @@ const Controls=React.createClass({
                 return <button className="button primary" onClick={this.onStatusChange('started')}>Start</button>
             }
             else if(countdownStatus === 'stopped'){
-                return <button className="button primary" onClick={this.onStatusChange('started')}>Start</button>
+                return  <button className="button primary" onClick={this.onStatusChange('started')}>Start</button>
             }
 
+            
         }
         return(
             <div className="controls">
@@ -33,4 +34,4 @@ const Controls=React.createClass({
         )
     }
 })
-module.exports=Controls
+module.exports=Controls2
